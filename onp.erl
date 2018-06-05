@@ -37,7 +37,7 @@ rpn("log", [X | Stack])   -> [(math:log10(X)) | Stack];
 rpn("log10", [X | Stack])   -> [(math:log10(X)) | Stack];
 rpn("exp", [X | Stack])   -> [(math:exp(X)) | Stack];
 
-rpn(Num, Stack)           -> [readNumber(Num) | Stack];
+rpn(Num, Stack)           -> [readNumber(Num) | Stack].
 
 
 readNumber(Num) ->
